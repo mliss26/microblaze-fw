@@ -5,7 +5,7 @@
  * BSD-3-Clause
  */
 #include "timer.h"
-#include "ubsoc.h"
+#include "mbsoc.h"
 #include <assert.h>
 
 

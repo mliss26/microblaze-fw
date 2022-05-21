@@ -4,7 +4,7 @@
  * Copyright (c) 2022 Matt Liss
  * BSD-3-Clause
  */
-#include "ubsoc.h"
+#include "mbsoc.h"
 #include "sdram.h"
 #include "util.h"
 #include <stdbool.h>

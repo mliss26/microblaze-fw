@@ -7,7 +7,7 @@
 #ifndef _GCNT_H_
 #define _GCNT_H_
 
-#include "ubsoc.h"
+#include "mbsoc.h"
 #include <stdint.h>
 
 
