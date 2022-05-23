@@ -21,14 +21,24 @@ env.MicroBlazeBSP('mb-bsp', 'system.xml')
 # setup build environment
 env.AppendUnique(CPPPATH = [ '#src' ])
 
+# define size of connected LCD
+env.AppendUnique(CPPDEFINES = [
+        'LCD_WIDTH=16',
+        'LCD_HEIGHT=2',
+        'LCD_INT_PUT_FUNCTIONS',
+])
+
 # build the firmware
 sources = [
     'build/src/main.c',
     'build/lib/src/gcnt.c',
     'build/lib/src/hexdump.c',
+    'build/lib/src/ina219.c',
+    'build/lib/src/lcd.c',
     'build/lib/src/list.c',
     'build/lib/src/sdram.c',
     'build/lib/src/timer.c',
+    'build/lib/src/twi.c',
 ]
 elf = env.Program('build/microblaze-fw.elf', sources)
 
