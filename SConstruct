@@ -12,6 +12,8 @@ env = Environment(
         toolpath = ['lib/scons'],
         tools = [ 'microblaze' ])
 Export('env')
+env.Tool('compilation_db')
+env.CompilationDatabase()
 env.VariantDir('build/src/', 'src', duplicate=0)
 env.VariantDir('build/lib/', 'lib', duplicate=0)
 

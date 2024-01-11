@@ -3,3 +3,5 @@
 **.elf
 build/
 mb-bsp/
+.cache/
+compile_commands.json
